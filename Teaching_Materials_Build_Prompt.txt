@@ -1,0 +1,42 @@
+Create a working teaching-materials generator in this ChatGPT workspace. Build and test it, then produce a downloadable technical PDF, editable PowerPoint and complete submission ZIP. Use plain English and neutral filenames. Everything needed to start is below.
+
+PROBLEM AND PROPOSED SOLUTION
+
+A lecturer can have tomorrow’s chapter ready and still need to plan the class, write practice questions and decide how to grade them. These materials are often written separately. A quiz might ask students to explain a mistake while its marking guide gives credit only for the final answer.
+
+Build a workspace where the lecturer uploads teaching material once and generates a lesson plan, grading rubric, flashcard deck and quiz bank from shared learning objectives. The lecturer should be able to select a quiz question, see the passage it came from, inspect how it will be graded, edit it and export the corrected pack.
+
+BUILD THE WORKFLOW
+
+1. Accept Markdown and text-based PDF lecture notes, syllabus outlines or textbook chapters. Preserve page numbers or headings. Show the extracted passages and explain what to do if a file has no readable text.
+2. Let the lecturer choose lesson duration, learner level and Bloom’s Taxonomy target. Support introductory and advanced work across Remember, Understand, Apply, Analyze, Evaluate and Create. Change what students must do to earn credit.
+3. Generate a timed lesson with formative checks, a rubric with observable descriptors and marks, flashcards with answers, and a quiz bank with explanations and scoring guidance. Link factual answers to source passages. Flag gaps. Assemble a short student study guide from the reviewed material.
+4. Support editing and educator approval. Editing an approved item returns it to review. Export the latest content as Markdown, valid JSON and a printable layout. Provide separate student and teacher copies. Keep the quiz answer key in the teacher copy.
+
+USE OPENAI AND CREDITS CAREFULLY
+
+Check available tools once, then start building. Use Codex for coding and testing if available. Prefer Python and Streamlit for the interface, pypdf for PDF text, Pydantic for validating generated data, ReportLab for PDFs and diagrams, python-pptx for editable slides, and pytest for checks. Use installed equivalents when necessary and document what actually ran.
+
+Use an approved OpenAI model to identify objectives, draft the four materials, adjust difficulty, cite passages and revise a selected item. If an approved API is available, use the OpenAI Python SDK and Responses API with structured output. If only ChatGPT is available, generate the sample pack in this conversation, save it as JSON and exercise the app’s import, review and export workflow. Label that run “Generated in ChatGPT and imported.” Include the reusable generation prompt for future uploads.
+
+For a short source, aim for one generation for the whole pack. Parse the source once, reuse results within the session and revise only the requested item. Use ordinary code for checking marks and timing, editing, printing, diagrams and downloads. Count retries against the budget and record usage only when visible.
+
+RUN THIS DEMONSTRATION
+
+Create two original files on first-in, first-out printer queues: one Markdown lecture note and one selectable-text PDF with a worked example. Upload them through the same interface a lecturer would use. Use this live teacher request:
+
+“Prepare a 45-minute lesson, a grading rubric, six flashcards, six quiz questions and a one-page study guide from these notes. Include a beginner question and an advanced question about the same objective. Show the source and marking criteria for each quiz answer.”
+
+For the beginner question, ask which job prints first when A arrives before B. For the advanced question, jobs A, B and C arrive in order but print A, C, B. Ask the student to identify the first error, justify it and correct the order. Open the cited passage, edit a grading descriptor and show the revision in all three exports. Test a fresh upload and a request for a fact absent from the notes. Check that lesson minutes and rubric marks add up and student exports omit the quiz key. Record actual outcomes, elapsed time and any unrun checks. Claim time savings only if you measure a comparable manual task.
+
+CREATE THE ACTUAL FILES
+
+• Technical_Report.pdf and its editable source. Explain the problem, proposed solution, user workflow, actual tech stack, OpenAI’s role, credit controls, tests, limitations and practical use. Embed two readable diagrams: system architecture and the path from an uploaded passage through generation, educator review and export. Include the verified preview link and access instructions when available.
+• Pitch_Deck.pptx. Create an editable presentation with speaker notes. Use roughly eight slides unless a workspace rule specifies otherwise. Show the educator’s problem, source passage, four outputs, difficulty comparison, reviewed correction, architecture, measured result and demo access. Use screenshots of the running product where available.
+• Submission_Package.zip. Include the report and deck, runnable source, README with launch command, sample inputs and outputs, live demo prompt, diagrams, relevant code and UI screenshots, sanitized OpenAI usage evidence, test results, a short pitch script and ready-to-paste project summary. Include a playable demo recording if supported. Otherwise supply an exact recording shot list and mark the video pending.
+
+Use an approved preview option if available. Test the URL from a fresh session and state who can open it. If a shareable URL is unavailable, give a reproducible local launch command and identify the access limitation in both documents.
+
+Open the finished PDF and PPTX, inspect their diagrams and text for clipping, and check the ZIP contents. Add a one-page checklist linking actual evidence to the five equally weighted criteria: problem clarity, effective OpenAI use, solution quality, practical implementation and impact, and responsible AI. Flag unknown upload limits or required fields for the participant to verify. Leave final submission to me.
+
+Return direct download links for the PDF, PPTX and ZIP, followed by the preview status and anything still pending. If the workspace cannot create binary files, deliver a runnable script that generates them from the completed content and identify which outputs you could not verify.
